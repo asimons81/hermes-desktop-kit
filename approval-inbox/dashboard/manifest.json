@@ -1,0 +1,8 @@
+{
+  "name": "approval-inbox",
+  "label": "Approval Inbox",
+  "description": "\"What's waiting on me\" — open action items, blocked kanban cards, failed cron runs, and TRT blocked-draft markers in one read-mostly pane.",
+  "icon": "inbox",
+  "version": "1.0.0",
+  "api": "plugin_api.py"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "typefully-q",
+  "label": "Typefully Q",
+  "description": "Typefully queue calendar in the desktop — view scheduled drafts and free slots, reschedule, publish, or delete from the pane.",
+  "icon": "calendar",
+  "version": "1.0.0",
+  "api": "plugin_api.py"
+}
