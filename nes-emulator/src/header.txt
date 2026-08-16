@@ -1,0 +1,10 @@
+/*
+ * HerNES (NES Emulator) plugin (frontend half)
+ *
+ * jsnes v2.1.0 is vendored inline below this header (Apache-2.0).
+ * Copyright 2020 Ben Firshman; jsnes is licensed under the Apache License 2.0.
+ * https://github.com/bfirsh/jsnes/blob/main/LICENSE
+ *
+ * This plugin plays only files the user already has. It ships no ROMs and
+ * has no downloader. Local scan + local play only.
+ */

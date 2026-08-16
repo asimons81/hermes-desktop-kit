@@ -1,0 +1,8 @@
+{
+  "name": "nes-emulator",
+  "label": "HerNES",
+  "description": "Play .nes games you already own — local library scan, iNES header info, and a jsnes-based emulator canvas.",
+  "icon": "game",
+  "version": "1.0.0",
+  "api": "plugin_api.py"
+}

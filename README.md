@@ -12,6 +12,7 @@ Each plugin is a plain runtime file (or file + small Python backend) that loads 
 | [approval-inbox](approval-inbox/) | "What's waiting on me" — action items, blocked kanban, failed cron, TRT drafts in one pane | Python | Local Hermes sources (env-configurable) |
 | [github-pr-dashboard](github-pr-dashboard/) | Created / review-requested / closed PRs across your account | Python | `gh` CLI, authenticated |
 | [typefully-q](typefully-q/) | Typefully queue calendar — reschedule, publish, delete from the desktop | Python | `TYPEFULLY_API_KEY` |
+| [nes-emulator](nes-emulator/) | HerNES — play .nes ROMs you already own in a full-pane jsnes canvas (save states, OS-mute detection) | Python | — |
 
 ## Install (any single plugin)
 
@@ -20,7 +21,7 @@ Each plugin is a plain runtime file (or file + small Python backend) that loads 
 mkdir -p ~/.hermes/desktop-plugins
 cp -r <plugin> ~/.hermes/desktop-plugins/
 
-# Backend (approval-inbox, github-pr-dashboard, typefully-q only)
+# Backend (approval-inbox, github-pr-dashboard, typefully-q, nes-emulator only)
 mkdir -p ~/.hermes/plugins/<plugin>
 cp -r <plugin>/dashboard ~/.hermes/plugins/<plugin>/
 ```
@@ -33,6 +34,7 @@ plugins:
     - approval-inbox
     - github-pr-dashboard
     - typefully-q
+    - nes-emulator
 ```
 
 Frontend plugins load automatically from `~/.hermes/desktop-plugins/` — no config needed. If a frontend doesn't appear within a few seconds, hit `⌘K` → **Reload desktop plugins**.
