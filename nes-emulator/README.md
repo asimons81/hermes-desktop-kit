@@ -1,6 +1,6 @@
 # HerNES — NES emulator for Hermes Desktop
 
-![HerNES — NES emulator for Hermes Desktop](assets/hernes-readme-hero.svg)
+![HerNES — NES emulator for Hermes Desktop](assets/hernes-readme-hero.png)
 
 Named HerNES — shoutout to [@leviath666](https://x.com/leviath666) on X for the name idea.
 
