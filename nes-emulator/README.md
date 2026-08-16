@@ -1,5 +1,7 @@
 # HerNES — NES emulator for Hermes Desktop
 
+![HerNES — NES emulator for Hermes Desktop](assets/hernes-readme-hero.svg)
+
 Named HerNES — shoutout to [@leviath666](https://x.com/leviath666) on X for the name idea.
 
 Play `.nes` ROMs you already own in a full-pane jsnes canvas inside the Hermes Desktop app. Save states, keyboard controls, and a local folder scan are all bundled in.
