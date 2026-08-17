@@ -90,6 +90,13 @@ function ensureStyles() {
     '.nes-btn:hover { background:var(--chrome-action-hover); }',
     '.nes-hint { font-size:0.78rem; color:var(--ui-text-quaternary); }',
     '.nes-empty { color:var(--ui-text-quaternary); padding:1rem 0; }',
+    // Idle menu: the promo art as a floating poster (data URL injected by
+    // assemble.sh), hint below. The 1px stroke/radius sit ON the img so the
+    // frame hugs the poster at any pane shape (no dead-space box). Theme vars
+    // only — hardcoded colors trip L3.
+    '.nes-menu { flex:1 1 auto; min-height:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.6rem; padding:0.75rem; overflow:hidden; background:radial-gradient(ellipse at 50% 42%, color-mix(in srgb, var(--ui-danger, var(--chrome-action-hover, transparent)) 8%, transparent) 0%, transparent 70%); }',
+    '.nes-menu-art { max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; display:block; border:1px solid var(--ui-stroke-secondary); border-radius:10px; }',
+    '.nes-menu-hint { font-size:0.8rem; color:var(--ui-text-quaternary); }',
     '.nes-error { color:var(--ui-danger, var(--ui-text-secondary)); font-size:0.8rem; }',
     '.nes-canvas-holder { position:relative; flex:1 1 auto; min-width:0; min-height:0; width:100%; overflow:hidden; background:var(--chrome-surface, transparent); }',
     '.nes-player { flex:1 1 auto; min-width:0; min-height:0; display:flex; flex-direction:column; }',

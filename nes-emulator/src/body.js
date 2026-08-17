@@ -626,7 +626,14 @@ function EmulatorCanvas() {
   }, [rom])
 
   if (!rom) {
-    return jsx('div', { className: 'nes-empty', children: 'Select a game from the library to start playing.' })
+    // Idle "menu" screen: branded promo art (data URL inlined by assemble.sh
+    // as HERMES_NES_MENU_BG) with the library hint below it. An <img> with
+    // max-width/max-height 100% keeps the poster at natural size (no upscale
+    // blur on huge panes) and can never crop or overflow.
+    return jsxs('div', { className: 'nes-menu', children: [
+      jsx('img', { className: 'nes-menu-art', src: HERMES_NES_MENU_BG, alt: 'HerNES' }),
+      jsx('div', { className: 'nes-menu-hint', children: 'Select a game from the library to start playing.' })
+    ] })
   }
 
   return jsxs('div', { className: 'nes-player', children: [

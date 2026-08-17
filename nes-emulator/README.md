@@ -12,6 +12,7 @@ Play `.nes` ROMs you already own in a full-pane jsnes canvas inside the Hermes D
 - Save and load states (per-game, per slot)
 - Local folder scan to discover ROMs in a directory you choose
 - OS-mute detection so the emulator pauses/respects system audio state
+- Branded menu art when no game is loaded (inlined into `plugin.js` at build time)
 - Keyboard controls:
   - Arrows = D-pad
   - X / A = jump
